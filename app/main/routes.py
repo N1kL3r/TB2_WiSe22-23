@@ -1,4 +1,7 @@
 from datetime import datetime
+import requests
+import pydeck as pdk
+import json
 from flask import render_template, flash, redirect, url_for, request, g, \
     jsonify, current_app
 from flask_login import current_user, login_required
@@ -219,3 +222,60 @@ def notifications():
         'data': n.get_data(),
         'timestamp': n.timestamp
     } for n in notifications])
+
+@bp.route('/map')
+def geo_map():                         # core part of the program: initialization of the map containing data about \
+    # recent wildfires
+    # print("You will be redirected to NETMAP shortly...")
+    # sleep(3)
+
+    # define parameters for the API request
+    days = 365
+    url = f"https://eonet.gsfc.nasa.gov/api/v3/categories/wildfires?days={days}"
+    r = requests.get(url, verify= True)
+    events_data = r.json()
+
+    # store raw data inside a .json file
+    with open('events.json', 'w') as file:
+        file.write(json.dumps(events_data, indent = 4))
+
+    # create a list with all events
+    event_list = events_data['events']
+
+    #create an empty list for the map-data
+    geo_dataframe = []
+
+    # store desired metadata in additional list for plotting the map
+    for event in event_list:
+        d={}
+        d['coordinates'] = event['geometry'][0]['coordinates']
+        d['title'] = event['title']
+        d['date'] = event['geometry'][0]['date']
+        geo_dataframe.append(d)
+
+    # define layer
+    layer = pdk.Layer(
+        "ScatterplotLayer",
+        geo_dataframe,
+        pickable=True,
+        opacity=0.8,
+        stroked=True,
+        filled=True,
+        radius_scale=6,
+        radius_min_pixels=10,
+        radius_max_pixels=100,
+        line_width_min_pixels=1,
+        get_position="coordinates",
+        get_radius="exits_radius",
+        get_fill_color=[255, 140, 0],
+        get_line_color=[0, 0, 0],
+    )
+
+    # Set the viewport location
+    view_state = pdk.ViewState(latitude=41.301035, longitude=-7.742235, zoom=10, bearing=0, pitch=0)
+
+    # Render
+    render = pdk.Deck(layers=[layer], initial_view_state=view_state, tooltip={"text":"{title}\n{date}\n{coordinates}"})
+    render.to_html("scatterplot_layer.html")
+
+    return render_template("scatterplot_layer.html", title=_('Netmap'))

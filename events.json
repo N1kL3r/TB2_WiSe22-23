@@ -1,0 +1,2115 @@
+{
+    "title": "EONET Events: Wildfires",
+    "description": "Wildfires includes all nature of fire, including forest and plains fires, as well as urban and industrial fire events. Fires may be naturally caused or manmade.",
+    "link": "https://eonet.gsfc.nasa.gov/api/v3/categories/wildfires",
+    "events": [
+        {
+            "id": "EONET_6280",
+            "title": "Nakia Creek Fire",
+            "description": null,
+            "link": "https://eonet.gsfc.nasa.gov/api/v3/events/EONET_6280",
+            "closed": null,
+            "categories": [
+                {
+                    "id": "wildfires",
+                    "title": "Wildfires"
+                }
+            ],
+            "sources": [
+                {
+                    "id": "InciWeb",
+                    "url": "http://inciweb.nwcg.gov/incident/8443/"
+                }
+            ],
+            "geometry": [
+                {
+                    "magnitudeValue": null,
+                    "magnitudeUnit": null,
+                    "date": "2022-10-09T15:45:00Z",
+                    "type": "Point",
+                    "coordinates": [
+                        -122.281,
+                        45.696
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "EONET_6269",
+            "title": "Bovee Fire",
+            "description": null,
+            "link": "https://eonet.gsfc.nasa.gov/api/v3/events/EONET_6269",
+            "closed": null,
+            "categories": [
+                {
+                    "id": "wildfires",
+                    "title": "Wildfires"
+                }
+            ],
+            "sources": [
+                {
+                    "id": "InciWeb",
+                    "url": "http://inciweb.nwcg.gov/incident/8437/"
+                }
+            ],
+            "geometry": [
+                {
+                    "magnitudeValue": null,
+                    "magnitudeUnit": null,
+                    "date": "2022-10-02T13:38:00Z",
+                    "type": "Point",
+                    "coordinates": [
+                        -100.31,
+                        41.869
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "EONET_6283",
+            "title": "Siouxon Fire",
+            "description": null,
+            "link": "https://eonet.gsfc.nasa.gov/api/v3/events/EONET_6283",
+            "closed": null,
+            "categories": [
+                {
+                    "id": "wildfires",
+                    "title": "Wildfires"
+                }
+            ],
+            "sources": [
+                {
+                    "id": "InciWeb",
+                    "url": "http://inciweb.nwcg.gov/incident/8436/"
+                }
+            ],
+            "geometry": [
+                {
+                    "magnitudeValue": null,
+                    "magnitudeUnit": null,
+                    "date": "2022-09-22T18:30:00Z",
+                    "type": "Point",
+                    "coordinates": [
+                        -122.089,
+                        45.944
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "EONET_6246",
+            "title": "Bolt Creek Fire",
+            "description": null,
+            "link": "https://eonet.gsfc.nasa.gov/api/v3/events/EONET_6246",
+            "closed": null,
+            "categories": [
+                {
+                    "id": "wildfires",
+                    "title": "Wildfires"
+                }
+            ],
+            "sources": [
+                {
+                    "id": "InciWeb",
+                    "url": "http://inciweb.nwcg.gov/incident/8417/"
+                }
+            ],
+            "geometry": [
+                {
+                    "magnitudeValue": null,
+                    "magnitudeUnit": null,
+                    "date": "2022-09-10T05:15:00Z",
+                    "type": "Point",
+                    "coordinates": [
+                        -121.346,
+                        47.728
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "EONET_6242",
+            "title": "Eagle Creek Fire",
+            "description": null,
+            "link": "https://eonet.gsfc.nasa.gov/api/v3/events/EONET_6242",
+            "closed": null,
+            "categories": [
+                {
+                    "id": "wildfires",
+                    "title": "Wildfires"
+                }
+            ],
+            "sources": [
+                {
+                    "id": "InciWeb",
+                    "url": "http://inciweb.nwcg.gov/incident/8413/"
+                }
+            ],
+            "geometry": [
+                {
+                    "magnitudeValue": null,
+                    "magnitudeUnit": null,
+                    "date": "2022-09-07T14:30:00Z",
+                    "type": "Point",
+                    "coordinates": [
+                        -109.682,
+                        48.139
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "EONET_6225",
+            "title": "Mosquito Fire",
+            "description": null,
+            "link": "https://eonet.gsfc.nasa.gov/api/v3/events/EONET_6225",
+            "closed": null,
+            "categories": [
+                {
+                    "id": "wildfires",
+                    "title": "Wildfires"
+                }
+            ],
+            "sources": [
+                {
+                    "id": "InciWeb",
+                    "url": "http://inciweb.nwcg.gov/incident/8398/"
+                }
+            ],
+            "geometry": [
+                {
+                    "magnitudeValue": null,
+                    "magnitudeUnit": null,
+                    "date": "2022-09-06T18:27:00Z",
+                    "type": "Point",
+                    "coordinates": [
+                        -120.719,
+                        39.01
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "EONET_6241",
+            "title": "Washakie Park Fire",
+            "description": null,
+            "link": "https://eonet.gsfc.nasa.gov/api/v3/events/EONET_6241",
+            "closed": null,
+            "categories": [
+                {
+                    "id": "wildfires",
+                    "title": "Wildfires"
+                }
+            ],
+            "sources": [
+                {
+                    "id": "InciWeb",
+                    "url": "http://inciweb.nwcg.gov/incident/8418/"
+                }
+            ],
+            "geometry": [
+                {
+                    "magnitudeValue": null,
+                    "magnitudeUnit": null,
+                    "date": "2022-09-06T15:15:00Z",
+                    "type": "Point",
+                    "coordinates": [
+                        -109.138,
+                        42.989
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "EONET_6227",
+            "title": "NW Pasayten Fires",
+            "description": null,
+            "link": "https://eonet.gsfc.nasa.gov/api/v3/events/EONET_6227",
+            "closed": null,
+            "categories": [
+                {
+                    "id": "wildfires",
+                    "title": "Wildfires"
+                }
+            ],
+            "sources": [
+                {
+                    "id": "InciWeb",
+                    "url": "http://inciweb.nwcg.gov/incident/8397/"
+                }
+            ],
+            "geometry": [
+                {
+                    "magnitudeValue": null,
+                    "magnitudeUnit": null,
+                    "date": "2022-09-06T06:00:00Z",
+                    "type": "Point",
+                    "coordinates": [
+                        -120.818,
+                        48.913
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "EONET_6223",
+            "title": "Fairview Fire",
+            "description": null,
+            "link": "https://eonet.gsfc.nasa.gov/api/v3/events/EONET_6223",
+            "closed": null,
+            "categories": [
+                {
+                    "id": "wildfires",
+                    "title": "Wildfires"
+                }
+            ],
+            "sources": [
+                {
+                    "id": "InciWeb",
+                    "url": "http://inciweb.nwcg.gov/incident/8402/"
+                }
+            ],
+            "geometry": [
+                {
+                    "magnitudeValue": null,
+                    "magnitudeUnit": null,
+                    "date": "2022-09-05T15:40:00Z",
+                    "type": "Point",
+                    "coordinates": [
+                        -116.891,
+                        33.714
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "EONET_6233",
+            "title": "Radford Fire",
+            "description": null,
+            "link": "https://eonet.gsfc.nasa.gov/api/v3/events/EONET_6233",
+            "closed": null,
+            "categories": [
+                {
+                    "id": "wildfires",
+                    "title": "Wildfires"
+                }
+            ],
+            "sources": [
+                {
+                    "id": "InciWeb",
+                    "url": "http://inciweb.nwcg.gov/incident/8390/"
+                }
+            ],
+            "geometry": [
+                {
+                    "magnitudeValue": null,
+                    "magnitudeUnit": null,
+                    "date": "2022-09-05T13:30:00Z",
+                    "type": "Point",
+                    "coordinates": [
+                        -116.882,
+                        34.177
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "EONET_6220",
+            "title": "Seven Bays Fire",
+            "description": null,
+            "link": "https://eonet.gsfc.nasa.gov/api/v3/events/EONET_6220",
+            "closed": null,
+            "categories": [
+                {
+                    "id": "wildfires",
+                    "title": "Wildfires"
+                }
+            ],
+            "sources": [
+                {
+                    "id": "InciWeb",
+                    "url": "http://inciweb.nwcg.gov/incident/8391/"
+                }
+            ],
+            "geometry": [
+                {
+                    "magnitudeValue": null,
+                    "magnitudeUnit": null,
+                    "date": "2022-09-04T15:35:00Z",
+                    "type": "Point",
+                    "coordinates": [
+                        -118.323,
+                        47.828
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "EONET_6238",
+            "title": "Boulder Lake Fire",
+            "description": null,
+            "link": "https://eonet.gsfc.nasa.gov/api/v3/events/EONET_6238",
+            "closed": null,
+            "categories": [
+                {
+                    "id": "wildfires",
+                    "title": "Wildfires"
+                }
+            ],
+            "sources": [
+                {
+                    "id": "InciWeb",
+                    "url": "http://inciweb.nwcg.gov/incident/8395/"
+                }
+            ],
+            "geometry": [
+                {
+                    "magnitudeValue": null,
+                    "magnitudeUnit": null,
+                    "date": "2022-09-03T21:00:00Z",
+                    "type": "Point",
+                    "coordinates": [
+                        -113.81999999,
+                        47.070999999
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "EONET_6229",
+            "title": "Bull Gin Complex Fire",
+            "description": null,
+            "link": "https://eonet.gsfc.nasa.gov/api/v3/events/EONET_6229",
+            "closed": null,
+            "categories": [
+                {
+                    "id": "wildfires",
+                    "title": "Wildfires"
+                }
+            ],
+            "sources": [
+                {
+                    "id": "InciWeb",
+                    "url": "http://inciweb.nwcg.gov/incident/8381/"
+                }
+            ],
+            "geometry": [
+                {
+                    "magnitudeValue": null,
+                    "magnitudeUnit": null,
+                    "date": "2022-09-02T20:50:00Z",
+                    "type": "Point",
+                    "coordinates": [
+                        -115.826,
+                        48.087
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "EONET_6281",
+            "title": "Loch Katrine Fire",
+            "description": null,
+            "link": "https://eonet.gsfc.nasa.gov/api/v3/events/EONET_6281",
+            "closed": null,
+            "categories": [
+                {
+                    "id": "wildfires",
+                    "title": "Wildfires"
+                }
+            ],
+            "sources": [
+                {
+                    "id": "InciWeb",
+                    "url": "http://inciweb.nwcg.gov/incident/8447/"
+                }
+            ],
+            "geometry": [
+                {
+                    "magnitudeValue": null,
+                    "magnitudeUnit": null,
+                    "date": "2022-09-02T00:00:00Z",
+                    "type": "Point",
+                    "coordinates": [
+                        -121.661,
+                        47.644
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "EONET_6226",
+            "title": "Chilliwack Complex Fire",
+            "description": null,
+            "link": "https://eonet.gsfc.nasa.gov/api/v3/events/EONET_6226",
+            "closed": null,
+            "categories": [
+                {
+                    "id": "wildfires",
+                    "title": "Wildfires"
+                }
+            ],
+            "sources": [
+                {
+                    "id": "InciWeb",
+                    "url": "http://inciweb.nwcg.gov/incident/8394/"
+                }
+            ],
+            "geometry": [
+                {
+                    "magnitudeValue": null,
+                    "magnitudeUnit": null,
+                    "date": "2022-09-01T19:00:00Z",
+                    "type": "Point",
+                    "coordinates": [
+                        -121.38,
+                        48.925
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "EONET_6209",
+            "title": "Double Creek Fire",
+            "description": null,
+            "link": "https://eonet.gsfc.nasa.gov/api/v3/events/EONET_6209",
+            "closed": null,
+            "categories": [
+                {
+                    "id": "wildfires",
+                    "title": "Wildfires"
+                }
+            ],
+            "sources": [
+                {
+                    "id": "InciWeb",
+                    "url": "http://inciweb.nwcg.gov/incident/8366/"
+                }
+            ],
+            "geometry": [
+                {
+                    "magnitudeValue": null,
+                    "magnitudeUnit": null,
+                    "date": "2022-08-30T17:00:00Z",
+                    "type": "Point",
+                    "coordinates": [
+                        -116.739,
+                        45.428
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "EONET_6282",
+            "title": "Suiattle River Fire",
+            "description": null,
+            "link": "https://eonet.gsfc.nasa.gov/api/v3/events/EONET_6282",
+            "closed": null,
+            "categories": [
+                {
+                    "id": "wildfires",
+                    "title": "Wildfires"
+                }
+            ],
+            "sources": [
+                {
+                    "id": "InciWeb",
+                    "url": "http://inciweb.nwcg.gov/incident/8396/"
+                }
+            ],
+            "geometry": [
+                {
+                    "magnitudeValue": null,
+                    "magnitudeUnit": null,
+                    "date": "2022-08-30T14:45:00Z",
+                    "type": "Point",
+                    "coordinates": [
+                        -121.392,
+                        48.311
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "EONET_6210",
+            "title": "Williams Creek Fire",
+            "description": null,
+            "link": "https://eonet.gsfc.nasa.gov/api/v3/events/EONET_6210",
+            "closed": null,
+            "categories": [
+                {
+                    "id": "wildfires",
+                    "title": "Wildfires"
+                }
+            ],
+            "sources": [
+                {
+                    "id": "InciWeb",
+                    "url": "http://inciweb.nwcg.gov/incident/8372/"
+                }
+            ],
+            "geometry": [
+                {
+                    "magnitudeValue": null,
+                    "magnitudeUnit": null,
+                    "date": "2022-08-29T16:30:00Z",
+                    "type": "Point",
+                    "coordinates": [
+                        -115.652,
+                        45.693
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "EONET_6211",
+            "title": "Trail Ridge Fire",
+            "description": null,
+            "link": "https://eonet.gsfc.nasa.gov/api/v3/events/EONET_6211",
+            "closed": null,
+            "categories": [
+                {
+                    "id": "wildfires",
+                    "title": "Wildfires"
+                }
+            ],
+            "sources": [
+                {
+                    "id": "InciWeb",
+                    "url": "http://inciweb.nwcg.gov/incident/8365/"
+                }
+            ],
+            "geometry": [
+                {
+                    "magnitudeValue": null,
+                    "magnitudeUnit": null,
+                    "date": "2022-08-26T13:15:00Z",
+                    "type": "Point",
+                    "coordinates": [
+                        -113.867,
+                        45.78
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "EONET_6205",
+            "title": "Nebo Fire",
+            "description": null,
+            "link": "https://eonet.gsfc.nasa.gov/api/v3/events/EONET_6205",
+            "closed": null,
+            "categories": [
+                {
+                    "id": "wildfires",
+                    "title": "Wildfires"
+                }
+            ],
+            "sources": [
+                {
+                    "id": "InciWeb",
+                    "url": "http://inciweb.nwcg.gov/incident/8363/"
+                }
+            ],
+            "geometry": [
+                {
+                    "magnitudeValue": null,
+                    "magnitudeUnit": null,
+                    "date": "2022-08-25T16:30:00Z",
+                    "type": "Point",
+                    "coordinates": [
+                        -117.11,
+                        45.133
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "EONET_6200",
+            "title": "Sturgill Fire",
+            "description": null,
+            "link": "https://eonet.gsfc.nasa.gov/api/v3/events/EONET_6200",
+            "closed": null,
+            "categories": [
+                {
+                    "id": "wildfires",
+                    "title": "Wildfires"
+                }
+            ],
+            "sources": [
+                {
+                    "id": "InciWeb",
+                    "url": "http://inciweb.nwcg.gov/incident/8364/"
+                }
+            ],
+            "geometry": [
+                {
+                    "magnitudeValue": null,
+                    "magnitudeUnit": null,
+                    "date": "2022-08-22T12:00:00Z",
+                    "type": "Point",
+                    "coordinates": [
+                        -117.534,
+                        45.284
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "EONET_6195",
+            "title": "Crockets Knob Fire",
+            "description": null,
+            "link": "https://eonet.gsfc.nasa.gov/api/v3/events/EONET_6195",
+            "closed": null,
+            "categories": [
+                {
+                    "id": "wildfires",
+                    "title": "Wildfires"
+                }
+            ],
+            "sources": [
+                {
+                    "id": "InciWeb",
+                    "url": "http://inciweb.nwcg.gov/incident/8355/"
+                }
+            ],
+            "geometry": [
+                {
+                    "magnitudeValue": null,
+                    "magnitudeUnit": null,
+                    "date": "2022-08-22T03:00:00Z",
+                    "type": "Point",
+                    "coordinates": [
+                        -118.708,
+                        44.728
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "EONET_6239",
+            "title": "Margaret Fire",
+            "description": null,
+            "link": "https://eonet.gsfc.nasa.gov/api/v3/events/EONET_6239",
+            "closed": null,
+            "categories": [
+                {
+                    "id": "wildfires",
+                    "title": "Wildfires"
+                }
+            ],
+            "sources": [
+                {
+                    "id": "InciWeb",
+                    "url": "http://inciweb.nwcg.gov/incident/8393/"
+                }
+            ],
+            "geometry": [
+                {
+                    "magnitudeValue": null,
+                    "magnitudeUnit": null,
+                    "date": "2022-08-22T00:00:00Z",
+                    "type": "Point",
+                    "coordinates": [
+                        -113.808,
+                        48.1
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "EONET_6182",
+            "title": "Wagner Road Fire",
+            "description": null,
+            "link": "https://eonet.gsfc.nasa.gov/api/v3/events/EONET_6182",
+            "closed": null,
+            "categories": [
+                {
+                    "id": "wildfires",
+                    "title": "Wildfires"
+                }
+            ],
+            "sources": [
+                {
+                    "id": "InciWeb",
+                    "url": "http://inciweb.nwcg.gov/incident/8344/"
+                }
+            ],
+            "geometry": [
+                {
+                    "magnitudeValue": null,
+                    "magnitudeUnit": null,
+                    "date": "2022-08-18T14:04:00Z",
+                    "type": "Point",
+                    "coordinates": [
+                        -117.857,
+                        47.086
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "EONET_6196",
+            "title": "Rum Creek Fire",
+            "description": null,
+            "link": "https://eonet.gsfc.nasa.gov/api/v3/events/EONET_6196",
+            "closed": null,
+            "categories": [
+                {
+                    "id": "wildfires",
+                    "title": "Wildfires"
+                }
+            ],
+            "sources": [
+                {
+                    "id": "InciWeb",
+                    "url": "http://inciweb.nwcg.gov/incident/8348/"
+                }
+            ],
+            "geometry": [
+                {
+                    "magnitudeValue": null,
+                    "magnitudeUnit": null,
+                    "date": "2022-08-17T12:00:00Z",
+                    "type": "Point",
+                    "coordinates": [
+                        -123.628,
+                        42.641
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "EONET_6174",
+            "title": "Garceau Fire, W of Polson, Montana, United States",
+            "description": null,
+            "link": "https://eonet.gsfc.nasa.gov/api/v3/events/EONET_6174",
+            "closed": null,
+            "categories": [
+                {
+                    "id": "wildfires",
+                    "title": "Wildfires"
+                }
+            ],
+            "sources": [
+                {
+                    "id": "InciWeb",
+                    "url": "https://inciweb.nwcg.gov/incident/8339/"
+                }
+            ],
+            "geometry": [
+                {
+                    "magnitudeValue": null,
+                    "magnitudeUnit": null,
+                    "date": "2022-08-16T00:00:00Z",
+                    "type": "Point",
+                    "coordinates": [
+                        -114.489,
+                        47.694
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "EONET_6216",
+            "title": "Ross Fork Fire",
+            "description": null,
+            "link": "https://eonet.gsfc.nasa.gov/api/v3/events/EONET_6216",
+            "closed": null,
+            "categories": [
+                {
+                    "id": "wildfires",
+                    "title": "Wildfires"
+                }
+            ],
+            "sources": [
+                {
+                    "id": "InciWeb",
+                    "url": "http://inciweb.nwcg.gov/incident/8375/"
+                }
+            ],
+            "geometry": [
+                {
+                    "magnitudeValue": null,
+                    "magnitudeUnit": null,
+                    "date": "2022-08-14T14:45:00Z",
+                    "type": "Point",
+                    "coordinates": [
+                        -114.98,
+                        43.811
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "EONET_6183",
+            "title": "Quartz Fire",
+            "description": null,
+            "link": "https://eonet.gsfc.nasa.gov/api/v3/events/EONET_6183",
+            "closed": null,
+            "categories": [
+                {
+                    "id": "wildfires",
+                    "title": "Wildfires"
+                }
+            ],
+            "sources": [
+                {
+                    "id": "InciWeb",
+                    "url": "http://inciweb.nwcg.gov/incident/8337/"
+                }
+            ],
+            "geometry": [
+                {
+                    "magnitudeValue": null,
+                    "magnitudeUnit": null,
+                    "date": "2022-08-14T10:15:00Z",
+                    "type": "Point",
+                    "coordinates": [
+                        -114.025,
+                        48.854
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "EONET_6165",
+            "title": "Mohr Fire",
+            "description": null,
+            "link": "https://eonet.gsfc.nasa.gov/api/v3/events/EONET_6165",
+            "closed": null,
+            "categories": [
+                {
+                    "id": "wildfires",
+                    "title": "Wildfires"
+                }
+            ],
+            "sources": [
+                {
+                    "id": "InciWeb",
+                    "url": "https://inciweb.nwcg.gov/incident/8322/"
+                }
+            ],
+            "geometry": [
+                {
+                    "magnitudeValue": null,
+                    "magnitudeUnit": null,
+                    "date": "2022-08-11T00:00:00Z",
+                    "type": "Point",
+                    "coordinates": [
+                        -119.919,
+                        47.533
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "EONET_6181",
+            "title": "White River  Fire",
+            "description": null,
+            "link": "https://eonet.gsfc.nasa.gov/api/v3/events/EONET_6181",
+            "closed": null,
+            "categories": [
+                {
+                    "id": "wildfires",
+                    "title": "Wildfires"
+                }
+            ],
+            "sources": [
+                {
+                    "id": "InciWeb",
+                    "url": "http://inciweb.nwcg.gov/incident/8329/"
+                }
+            ],
+            "geometry": [
+                {
+                    "magnitudeValue": null,
+                    "magnitudeUnit": null,
+                    "date": "2022-08-11T00:00:00Z",
+                    "type": "Point",
+                    "coordinates": [
+                        -120.917,
+                        47.885
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "EONET_6240",
+            "title": "Goat Rocks Fire",
+            "description": null,
+            "link": "https://eonet.gsfc.nasa.gov/api/v3/events/EONET_6240",
+            "closed": null,
+            "categories": [
+                {
+                    "id": "wildfires",
+                    "title": "Wildfires"
+                }
+            ],
+            "sources": [
+                {
+                    "id": "InciWeb",
+                    "url": "http://inciweb.nwcg.gov/incident/8415/"
+                }
+            ],
+            "geometry": [
+                {
+                    "magnitudeValue": null,
+                    "magnitudeUnit": null,
+                    "date": "2022-08-09T00:00:00Z",
+                    "type": "Point",
+                    "coordinates": [
+                        -121.517,
+                        46.636
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "EONET_6197",
+            "title": "Rodgers Fire",
+            "description": null,
+            "link": "https://eonet.gsfc.nasa.gov/api/v3/events/EONET_6197",
+            "closed": null,
+            "categories": [
+                {
+                    "id": "wildfires",
+                    "title": "Wildfires"
+                }
+            ],
+            "sources": [
+                {
+                    "id": "InciWeb",
+                    "url": "http://inciweb.nwcg.gov/incident/8333/"
+                }
+            ],
+            "geometry": [
+                {
+                    "magnitudeValue": null,
+                    "magnitudeUnit": null,
+                    "date": "2022-08-08T00:00:00Z",
+                    "type": "Point",
+                    "coordinates": [
+                        -119.552,
+                        37.954
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "EONET_6158",
+            "title": "Six Rivers Lightning Complex Fire",
+            "description": null,
+            "link": "https://eonet.gsfc.nasa.gov/api/v3/events/EONET_6158",
+            "closed": null,
+            "categories": [
+                {
+                    "id": "wildfires",
+                    "title": "Wildfires"
+                }
+            ],
+            "sources": [
+                {
+                    "id": "InciWeb",
+                    "url": "http://inciweb.nwcg.gov/incident/8312/"
+                }
+            ],
+            "geometry": [
+                {
+                    "magnitudeValue": null,
+                    "magnitudeUnit": null,
+                    "date": "2022-08-05T00:00:00Z",
+                    "type": "Point",
+                    "coordinates": [
+                        -123.598,
+                        40.907
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "EONET_6191",
+            "title": "Red Fire",
+            "description": null,
+            "link": "https://eonet.gsfc.nasa.gov/api/v3/events/EONET_6191",
+            "closed": null,
+            "categories": [
+                {
+                    "id": "wildfires",
+                    "title": "Wildfires"
+                }
+            ],
+            "sources": [
+                {
+                    "id": "InciWeb",
+                    "url": "http://inciweb.nwcg.gov/incident/8332/"
+                }
+            ],
+            "geometry": [
+                {
+                    "magnitudeValue": null,
+                    "magnitudeUnit": null,
+                    "date": "2022-08-04T00:00:00Z",
+                    "type": "Point",
+                    "coordinates": [
+                        -119.471,
+                        37.661
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "EONET_6151",
+            "title": "Yeti and Alex Fires",
+            "description": null,
+            "link": "https://eonet.gsfc.nasa.gov/api/v3/events/EONET_6151",
+            "closed": null,
+            "categories": [
+                {
+                    "id": "wildfires",
+                    "title": "Wildfires"
+                }
+            ],
+            "sources": [
+                {
+                    "id": "InciWeb",
+                    "url": "https://inciweb.nwcg.gov/incident/8299/"
+                }
+            ],
+            "geometry": [
+                {
+                    "magnitudeValue": null,
+                    "magnitudeUnit": null,
+                    "date": "2022-08-02T00:00:00Z",
+                    "type": "Point",
+                    "coordinates": [
+                        -123.278,
+                        41.868
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "EONET_6186",
+            "title": "Norton Fire",
+            "description": null,
+            "link": "https://eonet.gsfc.nasa.gov/api/v3/events/EONET_6186",
+            "closed": null,
+            "categories": [
+                {
+                    "id": "wildfires",
+                    "title": "Wildfires"
+                }
+            ],
+            "sources": [
+                {
+                    "id": "InciWeb",
+                    "url": "http://inciweb.nwcg.gov/incident/8308/"
+                }
+            ],
+            "geometry": [
+                {
+                    "magnitudeValue": null,
+                    "magnitudeUnit": null,
+                    "date": "2022-08-01T17:30:00Z",
+                    "type": "Point",
+                    "coordinates": [
+                        -114.927,
+                        44.857
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "EONET_6155",
+            "title": "Cedar Creek Fire",
+            "description": null,
+            "link": "https://eonet.gsfc.nasa.gov/api/v3/events/EONET_6155",
+            "closed": null,
+            "categories": [
+                {
+                    "id": "wildfires",
+                    "title": "Wildfires"
+                }
+            ],
+            "sources": [
+                {
+                    "id": "InciWeb",
+                    "url": "http://inciweb.nwcg.gov/incident/8307/"
+                }
+            ],
+            "geometry": [
+                {
+                    "magnitudeValue": null,
+                    "magnitudeUnit": null,
+                    "date": "2022-08-01T00:00:00Z",
+                    "type": "Point",
+                    "coordinates": [
+                        -122.166,
+                        43.74
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "EONET_6148",
+            "title": "Windigo Fire",
+            "description": null,
+            "link": "https://eonet.gsfc.nasa.gov/api/v3/events/EONET_6148",
+            "closed": null,
+            "categories": [
+                {
+                    "id": "wildfires",
+                    "title": "Wildfires"
+                }
+            ],
+            "sources": [
+                {
+                    "id": "InciWeb",
+                    "url": "http://inciweb.nwcg.gov/incident/8292/"
+                }
+            ],
+            "geometry": [
+                {
+                    "magnitudeValue": null,
+                    "magnitudeUnit": null,
+                    "date": "2022-07-30T00:00:00Z",
+                    "type": "Point",
+                    "coordinates": [
+                        -122.052,
+                        43.363
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "EONET_6153",
+            "title": "Weasel Fire",
+            "description": null,
+            "link": "https://eonet.gsfc.nasa.gov/api/v3/events/EONET_6153",
+            "closed": null,
+            "categories": [
+                {
+                    "id": "wildfires",
+                    "title": "Wildfires"
+                }
+            ],
+            "sources": [
+                {
+                    "id": "InciWeb",
+                    "url": "http://inciweb.nwcg.gov/incident/8290/"
+                }
+            ],
+            "geometry": [
+                {
+                    "magnitudeValue": null,
+                    "magnitudeUnit": null,
+                    "date": "2022-07-30T00:00:00Z",
+                    "type": "Point",
+                    "coordinates": [
+                        -114.748,
+                        48.977
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "EONET_6141",
+            "title": "Elmo Fire",
+            "description": null,
+            "link": "https://eonet.gsfc.nasa.gov/api/v3/events/EONET_6141",
+            "closed": null,
+            "categories": [
+                {
+                    "id": "wildfires",
+                    "title": "Wildfires"
+                }
+            ],
+            "sources": [
+                {
+                    "id": "InciWeb",
+                    "url": "http://inciweb.nwcg.gov/incident/8289/"
+                }
+            ],
+            "geometry": [
+                {
+                    "magnitudeValue": null,
+                    "magnitudeUnit": null,
+                    "date": "2022-07-29T16:00:00Z",
+                    "type": "Point",
+                    "coordinates": [
+                        -114.507,
+                        47.818
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "EONET_6140",
+            "title": "McKinney Fire",
+            "description": null,
+            "link": "https://eonet.gsfc.nasa.gov/api/v3/events/EONET_6140",
+            "closed": null,
+            "categories": [
+                {
+                    "id": "wildfires",
+                    "title": "Wildfires"
+                }
+            ],
+            "sources": [
+                {
+                    "id": "InciWeb",
+                    "url": "http://inciweb.nwcg.gov/incident/8287/"
+                }
+            ],
+            "geometry": [
+                {
+                    "magnitudeValue": null,
+                    "magnitudeUnit": null,
+                    "date": "2022-07-29T14:15:00Z",
+                    "type": "Point",
+                    "coordinates": [
+                        -122.885,
+                        41.819
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "EONET_6164",
+            "title": "Yeti and Alex Fires",
+            "description": null,
+            "link": "https://eonet.gsfc.nasa.gov/api/v3/events/EONET_6164",
+            "closed": null,
+            "categories": [
+                {
+                    "id": "wildfires",
+                    "title": "Wildfires"
+                }
+            ],
+            "sources": [
+                {
+                    "id": "InciWeb",
+                    "url": "http://inciweb.nwcg.gov/incident/8299/"
+                }
+            ],
+            "geometry": [
+                {
+                    "magnitudeValue": null,
+                    "magnitudeUnit": null,
+                    "date": "2022-07-29T00:00:00Z",
+                    "type": "Point",
+                    "coordinates": [
+                        -123.278,
+                        41.868
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "EONET_6131",
+            "title": "Oak FIre",
+            "description": null,
+            "link": "https://eonet.gsfc.nasa.gov/api/v3/events/EONET_6131",
+            "closed": null,
+            "categories": [
+                {
+                    "id": "wildfires",
+                    "title": "Wildfires"
+                }
+            ],
+            "sources": [
+                {
+                    "id": "CALFIRE",
+                    "url": "https://www.fire.ca.gov/incidents/2022/7/22/oak-fire/"
+                }
+            ],
+            "geometry": [
+                {
+                    "magnitudeValue": null,
+                    "magnitudeUnit": null,
+                    "date": "2022-07-22T09:50:08Z",
+                    "type": "Point",
+                    "coordinates": [
+                        -119.9234728,
+                        37.5509366
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "EONET_6133",
+            "title": "Oak Fire",
+            "description": null,
+            "link": "https://eonet.gsfc.nasa.gov/api/v3/events/EONET_6133",
+            "closed": null,
+            "categories": [
+                {
+                    "id": "wildfires",
+                    "title": "Wildfires"
+                }
+            ],
+            "sources": [
+                {
+                    "id": "InciWeb",
+                    "url": "http://inciweb.nwcg.gov/incident/8280/"
+                }
+            ],
+            "geometry": [
+                {
+                    "magnitudeValue": null,
+                    "magnitudeUnit": null,
+                    "date": "2022-07-22T00:00:00Z",
+                    "type": "Point",
+                    "coordinates": [
+                        -119.921,
+                        37.549
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "EONET_6132",
+            "title": "C3 Fire",
+            "description": null,
+            "link": "https://eonet.gsfc.nasa.gov/api/v3/events/EONET_6132",
+            "closed": null,
+            "categories": [
+                {
+                    "id": "wildfires",
+                    "title": "Wildfires"
+                }
+            ],
+            "sources": [
+                {
+                    "id": "InciWeb",
+                    "url": "http://inciweb.nwcg.gov/incident/8276/"
+                }
+            ],
+            "geometry": [
+                {
+                    "magnitudeValue": null,
+                    "magnitudeUnit": null,
+                    "date": "2022-07-21T11:30:00Z",
+                    "type": "Point",
+                    "coordinates": [
+                        -113.228,
+                        35.859
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "EONET_6122",
+            "title": "Moose Fire",
+            "description": null,
+            "link": "https://eonet.gsfc.nasa.gov/api/v3/events/EONET_6122",
+            "closed": null,
+            "categories": [
+                {
+                    "id": "wildfires",
+                    "title": "Wildfires"
+                }
+            ],
+            "sources": [
+                {
+                    "id": "InciWeb",
+                    "url": "http://inciweb.nwcg.gov/incident/8249/"
+                }
+            ],
+            "geometry": [
+                {
+                    "magnitudeValue": null,
+                    "magnitudeUnit": null,
+                    "date": "2022-07-17T16:00:00Z",
+                    "type": "Point",
+                    "coordinates": [
+                        -114.091,
+                        45.375
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "EONET_6129",
+            "title": "Woodtick Fire",
+            "description": null,
+            "link": "https://eonet.gsfc.nasa.gov/api/v3/events/EONET_6129",
+            "closed": null,
+            "categories": [
+                {
+                    "id": "wildfires",
+                    "title": "Wildfires"
+                }
+            ],
+            "sources": [
+                {
+                    "id": "InciWeb",
+                    "url": "http://inciweb.nwcg.gov/incident/8253/"
+                }
+            ],
+            "geometry": [
+                {
+                    "magnitudeValue": null,
+                    "magnitudeUnit": null,
+                    "date": "2022-07-14T17:00:00Z",
+                    "type": "Point",
+                    "coordinates": [
+                        -114.632,
+                        44.854
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "EONET_6144",
+            "title": "Clover Fire",
+            "description": null,
+            "link": "https://eonet.gsfc.nasa.gov/api/v3/events/EONET_6144",
+            "closed": null,
+            "categories": [
+                {
+                    "id": "wildfires",
+                    "title": "Wildfires"
+                }
+            ],
+            "sources": [
+                {
+                    "id": "InciWeb",
+                    "url": "http://inciweb.nwcg.gov/incident/8262/"
+                }
+            ],
+            "geometry": [
+                {
+                    "magnitudeValue": null,
+                    "magnitudeUnit": null,
+                    "date": "2022-07-13T19:00:00Z",
+                    "type": "Point",
+                    "coordinates": [
+                        -111.87,
+                        45.048
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "EONET_6115",
+            "title": "Jacob City Fire",
+            "description": null,
+            "link": "https://eonet.gsfc.nasa.gov/api/v3/events/EONET_6115",
+            "closed": null,
+            "categories": [
+                {
+                    "id": "wildfires",
+                    "title": "Wildfires"
+                }
+            ],
+            "sources": [
+                {
+                    "id": "InciWeb",
+                    "url": "http://inciweb.nwcg.gov/incident/8224/"
+                }
+            ],
+            "geometry": [
+                {
+                    "magnitudeValue": null,
+                    "magnitudeUnit": null,
+                    "date": "2022-07-09T14:34:00Z",
+                    "type": "Point",
+                    "coordinates": [
+                        -112.323,
+                        40.423
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "EONET_6113",
+            "title": "Becky Peak Fire",
+            "description": null,
+            "link": "https://eonet.gsfc.nasa.gov/api/v3/events/EONET_6113",
+            "closed": null,
+            "categories": [
+                {
+                    "id": "wildfires",
+                    "title": "Wildfires"
+                }
+            ],
+            "sources": [
+                {
+                    "id": "InciWeb",
+                    "url": "http://inciweb.nwcg.gov/incident/8210/"
+                }
+            ],
+            "geometry": [
+                {
+                    "magnitudeValue": null,
+                    "magnitudeUnit": null,
+                    "date": "2022-07-09T11:00:00Z",
+                    "type": "Point",
+                    "coordinates": [
+                        -114.588,
+                        39.93
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "EONET_6112",
+            "title": "Halfway Hill Fire",
+            "description": null,
+            "link": "https://eonet.gsfc.nasa.gov/api/v3/events/EONET_6112",
+            "closed": null,
+            "categories": [
+                {
+                    "id": "wildfires",
+                    "title": "Wildfires"
+                }
+            ],
+            "sources": [
+                {
+                    "id": "InciWeb",
+                    "url": "http://inciweb.nwcg.gov/incident/8215/"
+                }
+            ],
+            "geometry": [
+                {
+                    "magnitudeValue": null,
+                    "magnitudeUnit": null,
+                    "date": "2022-07-08T14:00:00Z",
+                    "type": "Point",
+                    "coordinates": [
+                        -112.339,
+                        38.915
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "EONET_6130",
+            "title": "Washburn Fire",
+            "description": null,
+            "link": "https://eonet.gsfc.nasa.gov/api/v3/events/EONET_6130",
+            "closed": null,
+            "categories": [
+                {
+                    "id": "wildfires",
+                    "title": "Wildfires"
+                }
+            ],
+            "sources": [
+                {
+                    "id": "InciWeb",
+                    "url": "https://inciweb.nwcg.gov/incident/8209/"
+                }
+            ],
+            "geometry": [
+                {
+                    "magnitudeValue": null,
+                    "magnitudeUnit": null,
+                    "date": "2022-07-07T09:26:51Z",
+                    "type": "Point",
+                    "coordinates": [
+                        -119.55035,
+                        37.53573
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "EONET_6109",
+            "title": "Middle Tanana Complex Fire",
+            "description": null,
+            "link": "https://eonet.gsfc.nasa.gov/api/v3/events/EONET_6109",
+            "closed": null,
+            "categories": [
+                {
+                    "id": "wildfires",
+                    "title": "Wildfires"
+                }
+            ],
+            "sources": [
+                {
+                    "id": "InciWeb",
+                    "url": "http://inciweb.nwcg.gov/incident/8201/"
+                }
+            ],
+            "geometry": [
+                {
+                    "magnitudeValue": null,
+                    "magnitudeUnit": null,
+                    "date": "2022-07-03T01:00:00Z",
+                    "type": "Point",
+                    "coordinates": [
+                        -144.95,
+                        64.37
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "EONET_6119",
+            "title": "Dalton Highway Complex Fire",
+            "description": null,
+            "link": "https://eonet.gsfc.nasa.gov/api/v3/events/EONET_6119",
+            "closed": null,
+            "categories": [
+                {
+                    "id": "wildfires",
+                    "title": "Wildfires"
+                }
+            ],
+            "sources": [
+                {
+                    "id": "InciWeb",
+                    "url": "http://inciweb.nwcg.gov/incident/8240/"
+                }
+            ],
+            "geometry": [
+                {
+                    "magnitudeValue": null,
+                    "magnitudeUnit": null,
+                    "date": "2022-07-01T12:45:00Z",
+                    "type": "Point",
+                    "coordinates": [
+                        -150.522,
+                        66.876
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "EONET_6097",
+            "title": "Bean Complex Fire",
+            "description": null,
+            "link": "https://eonet.gsfc.nasa.gov/api/v3/events/EONET_6097",
+            "closed": null,
+            "categories": [
+                {
+                    "id": "wildfires",
+                    "title": "Wildfires"
+                }
+            ],
+            "sources": [
+                {
+                    "id": "InciWeb",
+                    "url": "http://inciweb.nwcg.gov/incident/8183/"
+                }
+            ],
+            "geometry": [
+                {
+                    "magnitudeValue": null,
+                    "magnitudeUnit": null,
+                    "date": "2022-06-25T16:00:00Z",
+                    "type": "Point",
+                    "coordinates": [
+                        -151.641,
+                        64.875
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "EONET_6094",
+            "title": "Goshute Fire",
+            "description": null,
+            "link": "https://eonet.gsfc.nasa.gov/api/v3/events/EONET_6094",
+            "closed": null,
+            "categories": [
+                {
+                    "id": "wildfires",
+                    "title": "Wildfires"
+                }
+            ],
+            "sources": [
+                {
+                    "id": "InciWeb",
+                    "url": "http://inciweb.nwcg.gov/incident/8180/"
+                }
+            ],
+            "geometry": [
+                {
+                    "magnitudeValue": null,
+                    "magnitudeUnit": null,
+                    "date": "2022-06-25T15:30:00Z",
+                    "type": "Point",
+                    "coordinates": [
+                        -114.287,
+                        40.514
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "EONET_6107",
+            "title": "Clear Fire",
+            "description": null,
+            "link": "https://eonet.gsfc.nasa.gov/api/v3/events/EONET_6107",
+            "closed": null,
+            "categories": [
+                {
+                    "id": "wildfires",
+                    "title": "Wildfires"
+                }
+            ],
+            "sources": [
+                {
+                    "id": "InciWeb",
+                    "url": "http://inciweb.nwcg.gov/incident/8178/"
+                }
+            ],
+            "geometry": [
+                {
+                    "magnitudeValue": null,
+                    "magnitudeUnit": null,
+                    "date": "2022-06-21T17:00:00Z",
+                    "type": "Point",
+                    "coordinates": [
+                        -149.506,
+                        64.405
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "EONET_6095",
+            "title": "Minto Lakes Fire",
+            "description": null,
+            "link": "https://eonet.gsfc.nasa.gov/api/v3/events/EONET_6095",
+            "closed": null,
+            "categories": [
+                {
+                    "id": "wildfires",
+                    "title": "Wildfires"
+                }
+            ],
+            "sources": [
+                {
+                    "id": "InciWeb",
+                    "url": "http://inciweb.nwcg.gov/incident/8182/"
+                }
+            ],
+            "geometry": [
+                {
+                    "magnitudeValue": null,
+                    "magnitudeUnit": null,
+                    "date": "2022-06-21T16:30:00Z",
+                    "type": "Point",
+                    "coordinates": [
+                        -148.747,
+                        65.01
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "EONET_6090",
+            "title": "Kinsley Fire",
+            "description": null,
+            "link": "https://eonet.gsfc.nasa.gov/api/v3/events/EONET_6090",
+            "closed": null,
+            "categories": [
+                {
+                    "id": "wildfires",
+                    "title": "Wildfires"
+                }
+            ],
+            "sources": [
+                {
+                    "id": "InciWeb",
+                    "url": "http://inciweb.nwcg.gov/incident/8167/"
+                }
+            ],
+            "geometry": [
+                {
+                    "magnitudeValue": null,
+                    "magnitudeUnit": null,
+                    "date": "2022-06-17T13:00:00Z",
+                    "type": "Point",
+                    "coordinates": [
+                        -114.422,
+                        40.081
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "EONET_6092",
+            "title": "Lime Complex Fire",
+            "description": null,
+            "link": "https://eonet.gsfc.nasa.gov/api/v3/events/EONET_6092",
+            "closed": null,
+            "categories": [
+                {
+                    "id": "wildfires",
+                    "title": "Wildfires"
+                }
+            ],
+            "sources": [
+                {
+                    "id": "InciWeb",
+                    "url": "http://inciweb.nwcg.gov/incident/8173/"
+                }
+            ],
+            "geometry": [
+                {
+                    "magnitudeValue": null,
+                    "magnitudeUnit": null,
+                    "date": "2022-06-14T20:00:00Z",
+                    "type": "Point",
+                    "coordinates": [
+                        -158.006,
+                        61.57
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "EONET_6087",
+            "title": "Contreras Fire ",
+            "description": null,
+            "link": "https://eonet.gsfc.nasa.gov/api/v3/events/EONET_6087",
+            "closed": null,
+            "categories": [
+                {
+                    "id": "wildfires",
+                    "title": "Wildfires"
+                }
+            ],
+            "sources": [
+                {
+                    "id": "InciWeb",
+                    "url": "http://inciweb.nwcg.gov/incident/8154/"
+                }
+            ],
+            "geometry": [
+                {
+                    "magnitudeValue": null,
+                    "magnitudeUnit": null,
+                    "date": "2022-06-11T14:30:00Z",
+                    "type": "Point",
+                    "coordinates": [
+                        -111.574,
+                        31.849
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "EONET_6079",
+            "title": "East Fork Fire ",
+            "description": null,
+            "link": "https://eonet.gsfc.nasa.gov/api/v3/events/EONET_6079",
+            "closed": null,
+            "categories": [
+                {
+                    "id": "wildfires",
+                    "title": "Wildfires"
+                }
+            ],
+            "sources": [
+                {
+                    "id": "InciWeb",
+                    "url": "http://inciweb.nwcg.gov/incident/8148/"
+                }
+            ],
+            "geometry": [
+                {
+                    "magnitudeValue": null,
+                    "magnitudeUnit": null,
+                    "date": "2022-05-31T00:00:00Z",
+                    "type": "Point",
+                    "coordinates": [
+                        -162.799,
+                        62.366
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "EONET_6063",
+            "title": "Black Fire",
+            "description": null,
+            "link": "https://eonet.gsfc.nasa.gov/api/v3/events/EONET_6063",
+            "closed": null,
+            "categories": [
+                {
+                    "id": "wildfires",
+                    "title": "Wildfires"
+                }
+            ],
+            "sources": [
+                {
+                    "id": "InciWeb",
+                    "url": "http://inciweb.nwcg.gov/incident/8103/"
+                }
+            ],
+            "geometry": [
+                {
+                    "magnitudeValue": null,
+                    "magnitudeUnit": null,
+                    "date": "2022-05-13T21:30:00Z",
+                    "type": "Point",
+                    "coordinates": [
+                        -108.059,
+                        33.204
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "EONET_6091",
+            "title": "Left Fork Fire",
+            "description": null,
+            "link": "https://eonet.gsfc.nasa.gov/api/v3/events/EONET_6091",
+            "closed": null,
+            "categories": [
+                {
+                    "id": "wildfires",
+                    "title": "Wildfires"
+                }
+            ],
+            "sources": [
+                {
+                    "id": "InciWeb",
+                    "url": "http://inciweb.nwcg.gov/incident/8169/"
+                }
+            ],
+            "geometry": [
+                {
+                    "magnitudeValue": null,
+                    "magnitudeUnit": null,
+                    "date": "2022-05-09T14:15:00Z",
+                    "type": "Point",
+                    "coordinates": [
+                        -112.358,
+                        37.483
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "EONET_6064",
+            "title": "Cerro Pelado Fire",
+            "description": null,
+            "link": "https://eonet.gsfc.nasa.gov/api/v3/events/EONET_6064",
+            "closed": null,
+            "categories": [
+                {
+                    "id": "wildfires",
+                    "title": "Wildfires"
+                }
+            ],
+            "sources": [
+                {
+                    "id": "InciWeb",
+                    "url": "http://inciweb.nwcg.gov/incident/8075/"
+                }
+            ],
+            "geometry": [
+                {
+                    "magnitudeValue": null,
+                    "magnitudeUnit": null,
+                    "date": "2022-04-22T15:45:00Z",
+                    "type": "Point",
+                    "coordinates": [
+                        -106.584,
+                        35.775
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "EONET_6060",
+            "title": "Calf Canyon Fire",
+            "description": null,
+            "link": "https://eonet.gsfc.nasa.gov/api/v3/events/EONET_6060",
+            "closed": null,
+            "categories": [
+                {
+                    "id": "wildfires",
+                    "title": "Wildfires"
+                }
+            ],
+            "sources": [
+                {
+                    "id": "InciWeb",
+                    "url": "http://inciweb.nwcg.gov/incident/8069/"
+                }
+            ],
+            "geometry": [
+                {
+                    "magnitudeValue": null,
+                    "magnitudeUnit": null,
+                    "date": "2022-04-19T15:00:00Z",
+                    "type": "Point",
+                    "coordinates": [
+                        -105.503,
+                        35.759
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "EONET_6068",
+            "title": "Crooks Fire",
+            "description": null,
+            "link": "https://eonet.gsfc.nasa.gov/api/v3/events/EONET_6068",
+            "closed": null,
+            "categories": [
+                {
+                    "id": "wildfires",
+                    "title": "Wildfires"
+                }
+            ],
+            "sources": [
+                {
+                    "id": "InciWeb",
+                    "url": "http://inciweb.nwcg.gov/incident/8067/"
+                }
+            ],
+            "geometry": [
+                {
+                    "magnitudeValue": null,
+                    "magnitudeUnit": null,
+                    "date": "2022-04-18T10:00:00Z",
+                    "type": "Point",
+                    "coordinates": [
+                        -112.426,
+                        34.403
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "EONET_6059",
+            "title": "Hermits Peak Fire",
+            "description": null,
+            "link": "https://eonet.gsfc.nasa.gov/api/v3/events/EONET_6059",
+            "closed": null,
+            "categories": [
+                {
+                    "id": "wildfires",
+                    "title": "Wildfires"
+                }
+            ],
+            "sources": [
+                {
+                    "id": "InciWeb",
+                    "url": "http://inciweb.nwcg.gov/incident/8049/"
+                }
+            ],
+            "geometry": [
+                {
+                    "magnitudeValue": null,
+                    "magnitudeUnit": null,
+                    "date": "2022-04-06T16:51:00Z",
+                    "type": "Point",
+                    "coordinates": [
+                        -105.399,
+                        35.718
+                    ]
+                }
+            ]
+        }
+    ]
+}
