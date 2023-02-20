@@ -1,0 +1,114 @@
+2023-02-12 17:17:44,770 ERROR: Exception on / [GET] [in /Users/niklas/Documents/microblog/venv/lib/python3.8/site-packages/flask/app.py:1741]
+Traceback (most recent call last):
+  File "/Users/niklas/Documents/microblog/venv/lib/python3.8/site-packages/flask/app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/niklas/Documents/microblog/venv/lib/python3.8/site-packages/flask/app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/niklas/Documents/microblog/venv/lib/python3.8/site-packages/flask/app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/niklas/Documents/microblog/venv/lib/python3.8/site-packages/flask/app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/Users/niklas/Documents/microblog/venv/lib/python3.8/site-packages/flask_login/utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+  File "/Users/niklas/Documents/microblog/app/main/routes.py", line 47, in index
+    return render_template('index.html', title=('Home'), form=form,
+  File "/Users/niklas/Documents/microblog/venv/lib/python3.8/site-packages/flask/templating.py", line 147, in render_template
+    return _render(app, template, context)
+  File "/Users/niklas/Documents/microblog/venv/lib/python3.8/site-packages/flask/templating.py", line 130, in _render
+    rv = template.render(context)
+  File "/Users/niklas/Documents/microblog/venv/lib/python3.8/site-packages/jinja2/environment.py", line 1301, in render
+    self.environment.handle_exception()
+  File "/Users/niklas/Documents/microblog/venv/lib/python3.8/site-packages/jinja2/environment.py", line 936, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/Users/niklas/Documents/microblog/app/templates/index.html", line 2, in top-level template code
+    {% import 'bootstrap/wtf.html' as wtf %}
+  File "/Users/niklas/Documents/microblog/app/templates/base.html", line 1, in top-level template code
+    {% extends 'bootstrap/base.html' %}
+  File "/Users/niklas/Documents/microblog/venv/lib/python3.8/site-packages/flask_bootstrap/templates/bootstrap/base.html", line 1, in top-level template code
+    {% block doc -%}
+  File "/Users/niklas/Documents/microblog/venv/lib/python3.8/site-packages/flask_bootstrap/templates/bootstrap/base.html", line 4, in block 'doc'
+    {%- block html %}
+  File "/Users/niklas/Documents/microblog/venv/lib/python3.8/site-packages/flask_bootstrap/templates/bootstrap/base.html", line 20, in block 'html'
+    {% block body -%}
+  File "/Users/niklas/Documents/microblog/venv/lib/python3.8/site-packages/flask_bootstrap/templates/bootstrap/base.html", line 23, in block 'body'
+    {% block content -%}
+  File "/Users/niklas/Documents/microblog/app/templates/base.html", line 55, in block 'content'
+    {% block app_content %}{% endblock %}
+  File "/Users/niklas/Documents/microblog/app/templates/index.html", line 7, in block 'app_content'
+    {{ wtf.quick_form(form) }}
+  File "/Users/niklas/Documents/microblog/venv/lib/python3.8/site-packages/jinja2/runtime.py", line 777, in _invoke
+    rv = self._func(*arguments)
+  File "/Users/niklas/Documents/microblog/venv/lib/python3.8/site-packages/flask_bootstrap/templates/bootstrap/wtf.html", line 205, in template
+    {{ form_field(field,
+  File "/Users/niklas/Documents/microblog/venv/lib/python3.8/site-packages/jinja2/runtime.py", line 777, in _invoke
+    rv = self._func(*arguments)
+  File "/Users/niklas/Documents/microblog/venv/lib/python3.8/site-packages/flask_bootstrap/templates/bootstrap/wtf.html", line 119, in template
+    {{field.label(class="control-label")|safe}}
+  File "/Users/niklas/Documents/microblog/venv/lib/python3.8/site-packages/wtforms/fields/core.py", line 445, in __call__
+    text = escape(text or self.text)
+  File "/Users/niklas/Documents/microblog/venv/lib/python3.8/site-packages/flask_babel/speaklater.py", line 66, in __html__
+    return str(self)
+  File "/Users/niklas/Documents/microblog/venv/lib/python3.8/site-packages/flask_babel/speaklater.py", line 21, in __str__
+    return str(self._func(*self._args, **self._kwargs))
+  File "/Users/niklas/Documents/microblog/venv/lib/python3.8/site-packages/flask_babel/__init__.py", line 689, in gettext
+    return get_domain().gettext(*args, **kwargs)
+  File "/Users/niklas/Documents/microblog/venv/lib/python3.8/site-packages/flask_babel/__init__.py", line 682, in get_domain
+    babel = current_app.extensions['babel']
+KeyError: 'babel'
+2023-02-12 17:18:34,190 ERROR: Exception on /index [GET] [in /Users/niklas/Documents/microblog/venv/lib/python3.8/site-packages/flask/app.py:1741]
+Traceback (most recent call last):
+  File "/Users/niklas/Documents/microblog/venv/lib/python3.8/site-packages/flask/app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/niklas/Documents/microblog/venv/lib/python3.8/site-packages/flask/app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/niklas/Documents/microblog/venv/lib/python3.8/site-packages/flask/app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/niklas/Documents/microblog/venv/lib/python3.8/site-packages/flask/app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/Users/niklas/Documents/microblog/venv/lib/python3.8/site-packages/flask_login/utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+  File "/Users/niklas/Documents/microblog/app/main/routes.py", line 47, in index
+    return render_template('index.html', title=('Home'), form=form,
+  File "/Users/niklas/Documents/microblog/venv/lib/python3.8/site-packages/flask/templating.py", line 147, in render_template
+    return _render(app, template, context)
+  File "/Users/niklas/Documents/microblog/venv/lib/python3.8/site-packages/flask/templating.py", line 130, in _render
+    rv = template.render(context)
+  File "/Users/niklas/Documents/microblog/venv/lib/python3.8/site-packages/jinja2/environment.py", line 1301, in render
+    self.environment.handle_exception()
+  File "/Users/niklas/Documents/microblog/venv/lib/python3.8/site-packages/jinja2/environment.py", line 936, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/Users/niklas/Documents/microblog/app/templates/index.html", line 2, in top-level template code
+    {% import 'bootstrap/wtf.html' as wtf %}
+  File "/Users/niklas/Documents/microblog/app/templates/base.html", line 1, in top-level template code
+    {% extends 'bootstrap/base.html' %}
+  File "/Users/niklas/Documents/microblog/venv/lib/python3.8/site-packages/flask_bootstrap/templates/bootstrap/base.html", line 1, in top-level template code
+    {% block doc -%}
+  File "/Users/niklas/Documents/microblog/venv/lib/python3.8/site-packages/flask_bootstrap/templates/bootstrap/base.html", line 4, in block 'doc'
+    {%- block html %}
+  File "/Users/niklas/Documents/microblog/venv/lib/python3.8/site-packages/flask_bootstrap/templates/bootstrap/base.html", line 20, in block 'html'
+    {% block body -%}
+  File "/Users/niklas/Documents/microblog/venv/lib/python3.8/site-packages/flask_bootstrap/templates/bootstrap/base.html", line 23, in block 'body'
+    {% block content -%}
+  File "/Users/niklas/Documents/microblog/app/templates/base.html", line 55, in block 'content'
+    {% block app_content %}{% endblock %}
+  File "/Users/niklas/Documents/microblog/app/templates/index.html", line 7, in block 'app_content'
+    {{ wtf.quick_form(form) }}
+  File "/Users/niklas/Documents/microblog/venv/lib/python3.8/site-packages/jinja2/runtime.py", line 777, in _invoke
+    rv = self._func(*arguments)
+  File "/Users/niklas/Documents/microblog/venv/lib/python3.8/site-packages/flask_bootstrap/templates/bootstrap/wtf.html", line 205, in template
+    {{ form_field(field,
+  File "/Users/niklas/Documents/microblog/venv/lib/python3.8/site-packages/jinja2/runtime.py", line 777, in _invoke
+    rv = self._func(*arguments)
+  File "/Users/niklas/Documents/microblog/venv/lib/python3.8/site-packages/flask_bootstrap/templates/bootstrap/wtf.html", line 119, in template
+    {{field.label(class="control-label")|safe}}
+  File "/Users/niklas/Documents/microblog/venv/lib/python3.8/site-packages/wtforms/fields/core.py", line 445, in __call__
+    text = escape(text or self.text)
+  File "/Users/niklas/Documents/microblog/venv/lib/python3.8/site-packages/flask_babel/speaklater.py", line 66, in __html__
+    return str(self)
+  File "/Users/niklas/Documents/microblog/venv/lib/python3.8/site-packages/flask_babel/speaklater.py", line 21, in __str__
+    return str(self._func(*self._args, **self._kwargs))
+  File "/Users/niklas/Documents/microblog/venv/lib/python3.8/site-packages/flask_babel/__init__.py", line 689, in gettext
+    return get_domain().gettext(*args, **kwargs)
+  File "/Users/niklas/Documents/microblog/venv/lib/python3.8/site-packages/flask_babel/__init__.py", line 682, in get_domain
+    babel = current_app.extensions['babel']
+KeyError: 'babel'
