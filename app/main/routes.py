@@ -171,8 +171,8 @@ def search():
         if total > page * current_app.config['POSTS_PER_PAGE'] else None
     prev_url = url_for('main.search', q=g.search_form.q.data, page=page - 1) \
         if page > 1 else None
-    return render_template('search.html', title=_('Search'), posts=posts,
-                           next_url=next_url, prev_url=prev_url)
+    # return render_template('search.html', title=_('Search'), posts=posts,
+    #                        next_url=next_url, prev_url=prev_url)
 
 
 @bp.route('/send_message/<recipient>', methods=['GET', 'POST'])
@@ -231,7 +231,7 @@ def geo_map():                         # core part of the program: initializatio
 
     # define parameters for the API request
     days = 365
-    url = f"https://eonet.gsfc.nasa.gov/api/v3/categories/wildfires?days={days}"
+    url = f"https://eonet.gsfc.nasa.gov/api/v3/events?category=wildfires,landslides,severeStorms&days={days}"
     r = requests.get(url, verify= True)
     events_data = r.json()
 
@@ -276,6 +276,6 @@ def geo_map():                         # core part of the program: initializatio
 
     # Render
     render = pdk.Deck(layers=[layer], initial_view_state=view_state, tooltip={"text":"{title}\n{date}\n{coordinates}"})
-    render.to_html("scatterplot_layer.html")
+    render.to_html("app/templates/scatterplot_netmap.html")
 
-    return render_template("scatterplot_layer.html", title=_('Netmap'))
+    return render_template("netmap.html", title=_('Netmap'))

@@ -1,4 +1,4 @@
-2023-02-20 10:27:44,713 ERROR: Exception on /map [GET] [in /Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/flask/app.py:1741]
+2023-02-20 11:08:03,184 ERROR: Exception on / [GET] [in /Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/flask/app.py:1741]
 Traceback (most recent call last):
   File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/flask/app.py", line 2525, in wsgi_app
     response = self.full_dispatch_request()
@@ -12,71 +12,104 @@ Traceback (most recent call last):
   File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/flask/app.py", line 1796, in dispatch_request
     return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/Users/niklas/Documents/n1kl3r_TB2_WiSe_2223/app/main/routes.py", line 239, in open_geo_app
-    file.write(json.dumps(events_data, indent = 4))
-               ^^^^
-NameError: name 'json' is not defined
-2023-02-20 10:28:17,013 INFO: Microblog startup [in /Users/niklas/Documents/n1kl3r_TB2_WiSe_2223/app/__init__.py:77]
-2023-02-20 10:28:35,385 ERROR: Exception on /map [GET] [in /Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/flask/app.py:1741]
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/flask_login/utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/niklas/Documents/n1kl3r_TB2_WiSe_2223/app/main/routes.py", line 51, in index
+    return render_template('index.html', title=_('Home'), form=form,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/flask/templating.py", line 147, in render_template
+    return _render(app, template, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/flask/templating.py", line 130, in _render
+    rv = template.render(context)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/jinja2/environment.py", line 1301, in render
+    self.environment.handle_exception()
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/jinja2/environment.py", line 936, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/Users/niklas/Documents/n1kl3r_TB2_WiSe_2223/app/templates/index.html", line 2, in top-level template code
+    {% import 'bootstrap/wtf.html' as wtf %}
+    ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/niklas/Documents/n1kl3r_TB2_WiSe_2223/app/templates/base.html", line 1, in top-level template code
+    {% extends 'bootstrap/base.html' %}
+    ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/flask_bootstrap/templates/bootstrap/base.html", line 1, in top-level template code
+    {% block doc -%}
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/flask_bootstrap/templates/bootstrap/base.html", line 4, in block 'doc'
+    {%- block html %}
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/flask_bootstrap/templates/bootstrap/base.html", line 20, in block 'html'
+    {% block body -%}
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/flask_bootstrap/templates/bootstrap/base.html", line 21, in block 'body'
+    {% block navbar %}
+  File "/Users/niklas/Documents/n1kl3r_TB2_WiSe_2223/app/templates/base.html", line 23, in block 'navbar'
+    <li><a href="{{ url_for('main.map') }}">{{ _('netmap') }}</a></li>
+    ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/flask/app.py", line 2031, in url_for
+    return self.handle_url_build_error(error, endpoint, values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/flask/app.py", line 2020, in url_for
+    rv = url_adapter.build(  # type: ignore[union-attr]
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/werkzeug/routing/map.py", line 917, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.exceptions.BuildError: Could not build url for endpoint 'main.map'. Did you mean 'main.messages' instead?
+2023-02-20 11:09:44,934 INFO: Microblog startup [in /Users/niklas/Documents/n1kl3r_TB2_WiSe_2223/app/__init__.py:77]
+2023-02-20 11:11:32,151 INFO: Microblog startup [in /Users/niklas/Documents/n1kl3r_TB2_WiSe_2223/app/__init__.py:77]
+2023-02-20 11:11:34,590 ERROR: Exception on /index [GET] [in /Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/flask/app.py:1741]
 Traceback (most recent call last):
   File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/flask/app.py", line 2525, in wsgi_app
     response = self.full_dispatch_request()
                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/flask/app.py", line 1823, in full_dispatch_request
-    return self.finalize_request(rv)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/flask/app.py", line 1842, in finalize_request
-    response = self.make_response(rv)
-               ^^^^^^^^^^^^^^^^^^^^^^
-  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/flask/app.py", line 2134, in make_response
-    raise TypeError(
-TypeError: The view function for 'main.open_geo_app' did not return a valid response. The function either returned None or ended without a return statement.
-2023-02-20 10:40:31,081 ERROR: Exception on /map [GET] [in /Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/flask/app.py:1741]
-Traceback (most recent call last):
-  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/flask/app.py", line 2525, in wsgi_app
-    response = self.full_dispatch_request()
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/flask/app.py", line 1823, in full_dispatch_request
-    return self.finalize_request(rv)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/flask/app.py", line 1842, in finalize_request
-    response = self.make_response(rv)
-               ^^^^^^^^^^^^^^^^^^^^^^
-  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/flask/app.py", line 2134, in make_response
-    raise TypeError(
-TypeError: The view function for 'main.open_geo_app' did not return a valid response. The function either returned None or ended without a return statement.
-2023-02-20 10:40:40,965 ERROR: Exception on /map [GET] [in /Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/flask/app.py:1741]
-Traceback (most recent call last):
-  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/flask/app.py", line 2525, in wsgi_app
-    response = self.full_dispatch_request()
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/flask/app.py", line 1823, in full_dispatch_request
-    return self.finalize_request(rv)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/flask/app.py", line 1842, in finalize_request
-    response = self.make_response(rv)
-               ^^^^^^^^^^^^^^^^^^^^^^
-  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/flask/app.py", line 2134, in make_response
-    raise TypeError(
-TypeError: The view function for 'main.open_geo_app' did not return a valid response. The function either returned None or ended without a return statement.
-2023-02-20 10:47:19,676 ERROR: Exception on /map [GET] [in /Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/flask/app.py:1741]
-Traceback (most recent call last):
-  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/flask/app.py", line 2525, in wsgi_app
-    response = self.full_dispatch_request()
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/flask/app.py", line 1823, in full_dispatch_request
-    return self.finalize_request(rv)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/flask/app.py", line 1842, in finalize_request
-    response = self.make_response(rv)
-               ^^^^^^^^^^^^^^^^^^^^^^
-  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/flask/app.py", line 2134, in make_response
-    raise TypeError(
-TypeError: The view function for 'main.open_geo_app' did not return a valid response. The function either returned None or ended without a return statement.
-2023-02-20 10:47:29,174 INFO: Microblog startup [in /Users/niklas/Documents/n1kl3r_TB2_WiSe_2223/app/__init__.py:77]
-2023-02-20 10:49:10,014 INFO: Microblog startup [in /Users/niklas/Documents/n1kl3r_TB2_WiSe_2223/app/__init__.py:77]
-2023-02-20 10:50:47,804 INFO: Microblog startup [in /Users/niklas/Documents/n1kl3r_TB2_WiSe_2223/app/__init__.py:77]
-2023-02-20 10:51:08,714 INFO: Microblog startup [in /Users/niklas/Documents/n1kl3r_TB2_WiSe_2223/app/__init__.py:77]
-2023-02-20 10:58:54,619 INFO: Microblog startup [in /Users/niklas/Documents/n1kl3r_TB2_WiSe_2223/app/__init__.py:77]
-2023-02-20 11:03:48,651 INFO: Microblog startup [in /Users/niklas/Documents/n1kl3r_TB2_WiSe_2223/app/__init__.py:77]
-2023-02-20 11:07:56,789 INFO: Microblog startup [in /Users/niklas/Documents/n1kl3r_TB2_WiSe_2223/app/__init__.py:77]
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/flask/app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/flask/app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/flask/app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/flask_login/utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/niklas/Documents/n1kl3r_TB2_WiSe_2223/app/main/routes.py", line 51, in index
+    return render_template('index.html', title=_('Home'), form=form,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/flask/templating.py", line 147, in render_template
+    return _render(app, template, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/flask/templating.py", line 130, in _render
+    rv = template.render(context)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/jinja2/environment.py", line 1301, in render
+    self.environment.handle_exception()
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/jinja2/environment.py", line 936, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/Users/niklas/Documents/n1kl3r_TB2_WiSe_2223/app/templates/index.html", line 2, in top-level template code
+    {% import 'bootstrap/wtf.html' as wtf %}
+    ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/niklas/Documents/n1kl3r_TB2_WiSe_2223/app/templates/base.html", line 1, in top-level template code
+    {% extends 'bootstrap/base.html' %}
+    ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/flask_bootstrap/templates/bootstrap/base.html", line 1, in top-level template code
+    {% block doc -%}
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/flask_bootstrap/templates/bootstrap/base.html", line 4, in block 'doc'
+    {%- block html %}
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/flask_bootstrap/templates/bootstrap/base.html", line 20, in block 'html'
+    {% block body -%}
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/flask_bootstrap/templates/bootstrap/base.html", line 21, in block 'body'
+    {% block navbar %}
+  File "/Users/niklas/Documents/n1kl3r_TB2_WiSe_2223/app/templates/base.html", line 23, in block 'navbar'
+    <li><a href="{{ url_for('main.map') }}">{{ _('Netmap') }}</a></li>
+    ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/flask/app.py", line 2031, in url_for
+    return self.handle_url_build_error(error, endpoint, values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/flask/app.py", line 2020, in url_for
+    rv = url_adapter.build(  # type: ignore[union-attr]
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/werkzeug/routing/map.py", line 917, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.exceptions.BuildError: Could not build url for endpoint 'main.map'. Did you mean 'main.messages' instead?
+2023-02-20 11:13:42,858 INFO: Microblog startup [in /Users/niklas/Documents/n1kl3r_TB2_WiSe_2223/app/__init__.py:77]
