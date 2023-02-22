@@ -1,4 +1,4 @@
-2023-02-20 11:13:45,233 ERROR: Exception on /index [GET] [in /Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/flask/app.py:1741]
+2023-02-21 18:27:42,908 ERROR: Exception on /home [GET] [in /Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/flask/app.py:1741]
 Traceback (most recent call last):
   File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/flask/app.py", line 2525, in wsgi_app
     response = self.full_dispatch_request()
@@ -12,12 +12,9 @@ Traceback (most recent call last):
   File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/flask/app.py", line 1796, in dispatch_request
     return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/flask_login/utils.py", line 290, in decorated_view
-    return current_app.ensure_sync(func)(*args, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/Users/niklas/Documents/n1kl3r_TB2_WiSe_2223/app/main/routes.py", line 51, in index
-    return render_template('index.html', title=_('Home'), form=form,
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/niklas/Documents/n1kl3r_TB2_WiSe_2223/app/main/routes.py", line 57, in home
+    return render_template('home.html', title=_('Home'))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
   File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/flask/templating.py", line 147, in render_template
     return _render(app, template, context)
            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -28,7 +25,7 @@ Traceback (most recent call last):
     self.environment.handle_exception()
   File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/jinja2/environment.py", line 936, in handle_exception
     raise rewrite_traceback_stack(source=source)
-  File "/Users/niklas/Documents/n1kl3r_TB2_WiSe_2223/app/templates/index.html", line 2, in top-level template code
+  File "/Users/niklas/Documents/n1kl3r_TB2_WiSe_2223/app/templates/home.html", line 2, in top-level template code
     {% import 'bootstrap/wtf.html' as wtf %}
     ^^^^^^^^^^^^^^^^^^^^^^^^^
   File "/Users/niklas/Documents/n1kl3r_TB2_WiSe_2223/app/templates/base.html", line 1, in top-level template code
@@ -40,42 +37,76 @@ Traceback (most recent call last):
     {%- block html %}
   File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/flask_bootstrap/templates/bootstrap/base.html", line 20, in block 'html'
     {% block body -%}
-  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/flask_bootstrap/templates/bootstrap/base.html", line 21, in block 'body'
-    {% block navbar %}
-  File "/Users/niklas/Documents/n1kl3r_TB2_WiSe_2223/app/templates/base.html", line 23, in block 'navbar'
-    <li><a href="{{ url_for('main.map') }}">{{ _('Netmap') }}</a></li>
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/flask_bootstrap/templates/bootstrap/base.html", line 23, in block 'body'
+    {% block content -%}
+  File "/Users/niklas/Documents/n1kl3r_TB2_WiSe_2223/app/templates/base.html", line 70, in block 'content'
+    {% block app_content %}{% endblock %}
     ^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/flask/app.py", line 2031, in url_for
-    return self.handle_url_build_error(error, endpoint, values)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/flask/app.py", line 2020, in url_for
-    rv = url_adapter.build(  # type: ignore[union-attr]
-         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/werkzeug/routing/map.py", line 917, in build
-    raise BuildError(endpoint, values, method, self)
-werkzeug.routing.exceptions.BuildError: Could not build url for endpoint 'main.map'. Did you mean 'main.messages' instead?
-2023-02-20 11:20:02,165 INFO: Microblog startup [in /Users/niklas/Documents/n1kl3r_TB2_WiSe_2223/app/__init__.py:77]
-2023-02-20 11:22:46,432 INFO: Microblog startup [in /Users/niklas/Documents/n1kl3r_TB2_WiSe_2223/app/__init__.py:77]
-2023-02-20 11:23:02,767 INFO: Microblog startup [in /Users/niklas/Documents/n1kl3r_TB2_WiSe_2223/app/__init__.py:77]
-2023-02-21 12:46:03,946 INFO: Microblog startup [in /Users/niklas/Documents/n1kl3r_TB2_WiSe_2223/app/__init__.py:77]
-2023-02-21 12:50:47,920 INFO: Microblog startup [in /Users/niklas/Documents/n1kl3r_TB2_WiSe_2223/app/__init__.py:77]
-2023-02-21 12:53:10,156 INFO: Microblog startup [in /Users/niklas/Documents/n1kl3r_TB2_WiSe_2223/app/__init__.py:77]
-2023-02-21 12:56:35,795 INFO: Microblog startup [in /Users/niklas/Documents/n1kl3r_TB2_WiSe_2223/app/__init__.py:77]
-2023-02-21 12:57:44,231 INFO: Microblog startup [in /Users/niklas/Documents/n1kl3r_TB2_WiSe_2223/app/__init__.py:77]
-2023-02-21 13:01:33,465 INFO: Microblog startup [in /Users/niklas/Documents/n1kl3r_TB2_WiSe_2223/app/__init__.py:77]
-2023-02-21 13:02:23,898 INFO: Microblog startup [in /Users/niklas/Documents/n1kl3r_TB2_WiSe_2223/app/__init__.py:77]
-2023-02-21 13:03:36,662 INFO: Microblog startup [in /Users/niklas/Documents/n1kl3r_TB2_WiSe_2223/app/__init__.py:77]
-2023-02-21 13:07:30,929 INFO: Microblog startup [in /Users/niklas/Documents/n1kl3r_TB2_WiSe_2223/app/__init__.py:77]
-2023-02-21 13:08:25,871 INFO: Microblog startup [in /Users/niklas/Documents/n1kl3r_TB2_WiSe_2223/app/__init__.py:77]
-2023-02-21 13:10:05,540 INFO: Microblog startup [in /Users/niklas/Documents/n1kl3r_TB2_WiSe_2223/app/__init__.py:77]
-2023-02-21 13:10:26,882 INFO: Microblog startup [in /Users/niklas/Documents/n1kl3r_TB2_WiSe_2223/app/__init__.py:77]
-2023-02-21 13:15:33,835 INFO: Microblog startup [in /Users/niklas/Documents/n1kl3r_TB2_WiSe_2223/app/__init__.py:77]
-2023-02-21 13:17:45,343 INFO: Microblog startup [in /Users/niklas/Documents/n1kl3r_TB2_WiSe_2223/app/__init__.py:77]
-2023-02-21 13:20:00,410 INFO: Microblog startup [in /Users/niklas/Documents/n1kl3r_TB2_WiSe_2223/app/__init__.py:77]
-2023-02-21 13:22:13,333 INFO: Microblog startup [in /Users/niklas/Documents/n1kl3r_TB2_WiSe_2223/app/__init__.py:77]
-2023-02-21 13:25:04,792 INFO: Microblog startup [in /Users/niklas/Documents/n1kl3r_TB2_WiSe_2223/app/__init__.py:77]
-2023-02-21 13:27:35,391 INFO: Microblog startup [in /Users/niklas/Documents/n1kl3r_TB2_WiSe_2223/app/__init__.py:77]
-2023-02-21 13:28:19,764 INFO: Microblog startup [in /Users/niklas/Documents/n1kl3r_TB2_WiSe_2223/app/__init__.py:77]
-2023-02-21 13:29:56,510 INFO: Microblog startup [in /Users/niklas/Documents/n1kl3r_TB2_WiSe_2223/app/__init__.py:77]
-2023-02-21 13:30:24,354 INFO: Microblog startup [in /Users/niklas/Documents/n1kl3r_TB2_WiSe_2223/app/__init__.py:77]
-2023-02-21 14:40:24,091 INFO: Microblog startup [in /Users/niklas/Documents/n1kl3r_TB2_WiSe_2223/app/__init__.py:77]
+  File "/Users/niklas/Documents/n1kl3r_TB2_WiSe_2223/app/templates/home.html", line 9, in block 'app_content'
+    <!--            {{ wtf.quick_form(form) }}-->
+    ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/jinja2/runtime.py", line 777, in _invoke
+    rv = self._func(*arguments)
+         ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/flask_bootstrap/templates/bootstrap/wtf.html", line 200, in template
+    {{ form.hidden_tag() }}
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/jinja2/environment.py", line 485, in getattr
+    return getattr(obj, attribute)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+jinja2.exceptions.UndefinedError: 'form' is undefined
+2023-02-21 18:27:45,468 ERROR: Exception on /home [GET] [in /Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/flask/app.py:1741]
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/flask/app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/flask/app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/flask/app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/flask/app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/niklas/Documents/n1kl3r_TB2_WiSe_2223/app/main/routes.py", line 57, in home
+    return render_template('home.html', title=_('Home'))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/flask/templating.py", line 147, in render_template
+    return _render(app, template, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/flask/templating.py", line 130, in _render
+    rv = template.render(context)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/jinja2/environment.py", line 1301, in render
+    self.environment.handle_exception()
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/jinja2/environment.py", line 936, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/Users/niklas/Documents/n1kl3r_TB2_WiSe_2223/app/templates/home.html", line 2, in top-level template code
+    {% import 'bootstrap/wtf.html' as wtf %}
+    ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/niklas/Documents/n1kl3r_TB2_WiSe_2223/app/templates/base.html", line 1, in top-level template code
+    {% extends 'bootstrap/base.html' %}
+    ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/flask_bootstrap/templates/bootstrap/base.html", line 1, in top-level template code
+    {% block doc -%}
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/flask_bootstrap/templates/bootstrap/base.html", line 4, in block 'doc'
+    {%- block html %}
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/flask_bootstrap/templates/bootstrap/base.html", line 20, in block 'html'
+    {% block body -%}
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/flask_bootstrap/templates/bootstrap/base.html", line 23, in block 'body'
+    {% block content -%}
+  File "/Users/niklas/Documents/n1kl3r_TB2_WiSe_2223/app/templates/base.html", line 70, in block 'content'
+    {% block app_content %}{% endblock %}
+    ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/niklas/Documents/n1kl3r_TB2_WiSe_2223/app/templates/home.html", line 9, in block 'app_content'
+    <!--            {{ wtf.quick_form(form) }}-->
+    ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/jinja2/runtime.py", line 777, in _invoke
+    rv = self._func(*arguments)
+         ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/flask_bootstrap/templates/bootstrap/wtf.html", line 200, in template
+    {{ form.hidden_tag() }}
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/jinja2/environment.py", line 485, in getattr
+    return getattr(obj, attribute)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+jinja2.exceptions.UndefinedError: 'form' is undefined

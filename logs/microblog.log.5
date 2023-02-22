@@ -1,110 +1,81 @@
-2023-02-12 17:21:40,870 ERROR: Exception on /auth/login [GET] [in /Users/niklas/Documents/microblog/venv/lib/python3.8/site-packages/flask/app.py:1741]
+2023-02-20 11:13:45,233 ERROR: Exception on /index [GET] [in /Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/flask/app.py:1741]
 Traceback (most recent call last):
-  File "/Users/niklas/Documents/microblog/venv/lib/python3.8/site-packages/flask/app.py", line 2525, in wsgi_app
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/flask/app.py", line 2525, in wsgi_app
     response = self.full_dispatch_request()
-  File "/Users/niklas/Documents/microblog/venv/lib/python3.8/site-packages/flask/app.py", line 1822, in full_dispatch_request
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/flask/app.py", line 1822, in full_dispatch_request
     rv = self.handle_user_exception(e)
-  File "/Users/niklas/Documents/microblog/venv/lib/python3.8/site-packages/flask/app.py", line 1820, in full_dispatch_request
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/flask/app.py", line 1820, in full_dispatch_request
     rv = self.dispatch_request()
-  File "/Users/niklas/Documents/microblog/venv/lib/python3.8/site-packages/flask/app.py", line 1796, in dispatch_request
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/flask/app.py", line 1796, in dispatch_request
     return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
-  File "/Users/niklas/Documents/microblog/app/auth/routes.py", line 28, in login
-    return render_template('auth/login.html', title=('Sign In'), form=form)
-  File "/Users/niklas/Documents/microblog/venv/lib/python3.8/site-packages/flask/templating.py", line 147, in render_template
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/flask_login/utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/niklas/Documents/n1kl3r_TB2_WiSe_2223/app/main/routes.py", line 51, in index
+    return render_template('index.html', title=_('Home'), form=form,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/flask/templating.py", line 147, in render_template
     return _render(app, template, context)
-  File "/Users/niklas/Documents/microblog/venv/lib/python3.8/site-packages/flask/templating.py", line 130, in _render
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/flask/templating.py", line 130, in _render
     rv = template.render(context)
-  File "/Users/niklas/Documents/microblog/venv/lib/python3.8/site-packages/jinja2/environment.py", line 1301, in render
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/jinja2/environment.py", line 1301, in render
     self.environment.handle_exception()
-  File "/Users/niklas/Documents/microblog/venv/lib/python3.8/site-packages/jinja2/environment.py", line 936, in handle_exception
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/jinja2/environment.py", line 936, in handle_exception
     raise rewrite_traceback_stack(source=source)
-  File "/Users/niklas/Documents/microblog/app/templates/auth/login.html", line 2, in top-level template code
+  File "/Users/niklas/Documents/n1kl3r_TB2_WiSe_2223/app/templates/index.html", line 2, in top-level template code
     {% import 'bootstrap/wtf.html' as wtf %}
-  File "/Users/niklas/Documents/microblog/app/templates/base.html", line 1, in top-level template code
+    ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/niklas/Documents/n1kl3r_TB2_WiSe_2223/app/templates/base.html", line 1, in top-level template code
     {% extends 'bootstrap/base.html' %}
-  File "/Users/niklas/Documents/microblog/venv/lib/python3.8/site-packages/flask_bootstrap/templates/bootstrap/base.html", line 1, in top-level template code
+    ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/flask_bootstrap/templates/bootstrap/base.html", line 1, in top-level template code
     {% block doc -%}
-  File "/Users/niklas/Documents/microblog/venv/lib/python3.8/site-packages/flask_bootstrap/templates/bootstrap/base.html", line 4, in block 'doc'
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/flask_bootstrap/templates/bootstrap/base.html", line 4, in block 'doc'
     {%- block html %}
-  File "/Users/niklas/Documents/microblog/venv/lib/python3.8/site-packages/flask_bootstrap/templates/bootstrap/base.html", line 20, in block 'html'
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/flask_bootstrap/templates/bootstrap/base.html", line 20, in block 'html'
     {% block body -%}
-  File "/Users/niklas/Documents/microblog/venv/lib/python3.8/site-packages/flask_bootstrap/templates/bootstrap/base.html", line 23, in block 'body'
-    {% block content -%}
-  File "/Users/niklas/Documents/microblog/app/templates/base.html", line 55, in block 'content'
-    {% block app_content %}{% endblock %}
-  File "/Users/niklas/Documents/microblog/app/templates/auth/login.html", line 8, in block 'app_content'
-    {{ wtf.quick_form(form) }}
-  File "/Users/niklas/Documents/microblog/venv/lib/python3.8/site-packages/jinja2/runtime.py", line 777, in _invoke
-    rv = self._func(*arguments)
-  File "/Users/niklas/Documents/microblog/venv/lib/python3.8/site-packages/flask_bootstrap/templates/bootstrap/wtf.html", line 205, in template
-    {{ form_field(field,
-  File "/Users/niklas/Documents/microblog/venv/lib/python3.8/site-packages/jinja2/runtime.py", line 777, in _invoke
-    rv = self._func(*arguments)
-  File "/Users/niklas/Documents/microblog/venv/lib/python3.8/site-packages/flask_bootstrap/templates/bootstrap/wtf.html", line 119, in template
-    {{field.label(class="control-label")|safe}}
-  File "/Users/niklas/Documents/microblog/venv/lib/python3.8/site-packages/wtforms/fields/core.py", line 445, in __call__
-    text = escape(text or self.text)
-  File "/Users/niklas/Documents/microblog/venv/lib/python3.8/site-packages/flask_babel/speaklater.py", line 66, in __html__
-    return str(self)
-  File "/Users/niklas/Documents/microblog/venv/lib/python3.8/site-packages/flask_babel/speaklater.py", line 21, in __str__
-    return str(self._func(*self._args, **self._kwargs))
-  File "/Users/niklas/Documents/microblog/venv/lib/python3.8/site-packages/flask_babel/__init__.py", line 689, in gettext
-    return get_domain().gettext(*args, **kwargs)
-  File "/Users/niklas/Documents/microblog/venv/lib/python3.8/site-packages/flask_babel/__init__.py", line 682, in get_domain
-    babel = current_app.extensions['babel']
-KeyError: 'babel'
-2023-02-12 18:11:49,325 INFO: Microblog startup [in /Users/niklas/Documents/microblog/app/__init__.py:77]
-2023-02-12 18:21:48,090 INFO: Microblog startup [in /Users/niklas/Documents/microblog/app/__init__.py:77]
-2023-02-12 18:39:52,186 INFO: Microblog startup [in /Users/niklas/Documents/microblog/app/__init__.py:77]
-2023-02-13 07:04:52,667 INFO: Microblog startup [in /Users/niklas/Documents/microblog/app/__init__.py:77]
-2023-02-13 07:20:31,842 INFO: Microblog startup [in /Users/niklas/Documents/microblog/app/__init__.py:77]
-2023-02-13 07:20:39,338 INFO: Microblog startup [in /Users/niklas/Documents/microblog/app/__init__.py:77]
-2023-02-13 07:32:39,680 INFO: Microblog startup [in /Users/niklas/Documents/microblog/app/__init__.py:77]
-2023-02-13 16:29:36,036 INFO: Microblog startup [in /Users/niklas/Documents/microblog/app/__init__.py:77]
-2023-02-13 16:29:43,711 INFO: Microblog startup [in /Users/niklas/Documents/microblog/app/__init__.py:77]
-2023-02-13 16:38:46,154 INFO: Microblog startup [in /Users/niklas/Documents/microblog/app/__init__.py:77]
-2023-02-13 16:40:15,539 ERROR: Exception on /notifications [GET] [in /Users/niklas/Documents/microblog/venv/lib/python3.8/site-packages/flask/app.py:1741]
-Traceback (most recent call last):
-  File "/Users/niklas/Documents/microblog/venv/lib/python3.8/site-packages/flask/app.py", line 2525, in wsgi_app
-    response = self.full_dispatch_request()
-  File "/Users/niklas/Documents/microblog/venv/lib/python3.8/site-packages/flask/app.py", line 1822, in full_dispatch_request
-    rv = self.handle_user_exception(e)
-  File "/Users/niklas/Documents/microblog/venv/lib/python3.8/site-packages/flask/app.py", line 1820, in full_dispatch_request
-    rv = self.dispatch_request()
-  File "/Users/niklas/Documents/microblog/venv/lib/python3.8/site-packages/flask/app.py", line 1796, in dispatch_request
-    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
-  File "/Users/niklas/Documents/microblog/venv/lib/python3.8/site-packages/flask_login/utils.py", line 290, in decorated_view
-    return current_app.ensure_sync(func)(*args, **kwargs)
-  File "/Users/niklas/Documents/microblog/app/main/routes.py", line 131, in notifications
-    Notification.timestamp > since).order_by(Notification.timestamp.asc())
-NameError: name 'Notification' is not defined
-2023-02-13 16:40:25,539 ERROR: Exception on /notifications [GET] [in /Users/niklas/Documents/microblog/venv/lib/python3.8/site-packages/flask/app.py:1741]
-Traceback (most recent call last):
-  File "/Users/niklas/Documents/microblog/venv/lib/python3.8/site-packages/flask/app.py", line 2525, in wsgi_app
-    response = self.full_dispatch_request()
-  File "/Users/niklas/Documents/microblog/venv/lib/python3.8/site-packages/flask/app.py", line 1822, in full_dispatch_request
-    rv = self.handle_user_exception(e)
-  File "/Users/niklas/Documents/microblog/venv/lib/python3.8/site-packages/flask/app.py", line 1820, in full_dispatch_request
-    rv = self.dispatch_request()
-  File "/Users/niklas/Documents/microblog/venv/lib/python3.8/site-packages/flask/app.py", line 1796, in dispatch_request
-    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
-  File "/Users/niklas/Documents/microblog/venv/lib/python3.8/site-packages/flask_login/utils.py", line 290, in decorated_view
-    return current_app.ensure_sync(func)(*args, **kwargs)
-  File "/Users/niklas/Documents/microblog/app/main/routes.py", line 131, in notifications
-    Notification.timestamp > since).order_by(Notification.timestamp.asc())
-NameError: name 'Notification' is not defined
-2023-02-13 16:40:35,546 ERROR: Exception on /notifications [GET] [in /Users/niklas/Documents/microblog/venv/lib/python3.8/site-packages/flask/app.py:1741]
-Traceback (most recent call last):
-  File "/Users/niklas/Documents/microblog/venv/lib/python3.8/site-packages/flask/app.py", line 2525, in wsgi_app
-    response = self.full_dispatch_request()
-  File "/Users/niklas/Documents/microblog/venv/lib/python3.8/site-packages/flask/app.py", line 1822, in full_dispatch_request
-    rv = self.handle_user_exception(e)
-  File "/Users/niklas/Documents/microblog/venv/lib/python3.8/site-packages/flask/app.py", line 1820, in full_dispatch_request
-    rv = self.dispatch_request()
-  File "/Users/niklas/Documents/microblog/venv/lib/python3.8/site-packages/flask/app.py", line 1796, in dispatch_request
-    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
-  File "/Users/niklas/Documents/microblog/venv/lib/python3.8/site-packages/flask_login/utils.py", line 290, in decorated_view
-    return current_app.ensure_sync(func)(*args, **kwargs)
-  File "/Users/niklas/Documents/microblog/app/main/routes.py", line 131, in notifications
-    Notification.timestamp > since).order_by(Notification.timestamp.asc())
-NameError: name 'Notification' is not defined
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/flask_bootstrap/templates/bootstrap/base.html", line 21, in block 'body'
+    {% block navbar %}
+  File "/Users/niklas/Documents/n1kl3r_TB2_WiSe_2223/app/templates/base.html", line 23, in block 'navbar'
+    <li><a href="{{ url_for('main.map') }}">{{ _('Netmap') }}</a></li>
+    ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/flask/app.py", line 2031, in url_for
+    return self.handle_url_build_error(error, endpoint, values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/flask/app.py", line 2020, in url_for
+    rv = url_adapter.build(  # type: ignore[union-attr]
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/werkzeug/routing/map.py", line 917, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.exceptions.BuildError: Could not build url for endpoint 'main.map'. Did you mean 'main.messages' instead?
+2023-02-20 11:20:02,165 INFO: Microblog startup [in /Users/niklas/Documents/n1kl3r_TB2_WiSe_2223/app/__init__.py:77]
+2023-02-20 11:22:46,432 INFO: Microblog startup [in /Users/niklas/Documents/n1kl3r_TB2_WiSe_2223/app/__init__.py:77]
+2023-02-20 11:23:02,767 INFO: Microblog startup [in /Users/niklas/Documents/n1kl3r_TB2_WiSe_2223/app/__init__.py:77]
+2023-02-21 12:46:03,946 INFO: Microblog startup [in /Users/niklas/Documents/n1kl3r_TB2_WiSe_2223/app/__init__.py:77]
+2023-02-21 12:50:47,920 INFO: Microblog startup [in /Users/niklas/Documents/n1kl3r_TB2_WiSe_2223/app/__init__.py:77]
+2023-02-21 12:53:10,156 INFO: Microblog startup [in /Users/niklas/Documents/n1kl3r_TB2_WiSe_2223/app/__init__.py:77]
+2023-02-21 12:56:35,795 INFO: Microblog startup [in /Users/niklas/Documents/n1kl3r_TB2_WiSe_2223/app/__init__.py:77]
+2023-02-21 12:57:44,231 INFO: Microblog startup [in /Users/niklas/Documents/n1kl3r_TB2_WiSe_2223/app/__init__.py:77]
+2023-02-21 13:01:33,465 INFO: Microblog startup [in /Users/niklas/Documents/n1kl3r_TB2_WiSe_2223/app/__init__.py:77]
+2023-02-21 13:02:23,898 INFO: Microblog startup [in /Users/niklas/Documents/n1kl3r_TB2_WiSe_2223/app/__init__.py:77]
+2023-02-21 13:03:36,662 INFO: Microblog startup [in /Users/niklas/Documents/n1kl3r_TB2_WiSe_2223/app/__init__.py:77]
+2023-02-21 13:07:30,929 INFO: Microblog startup [in /Users/niklas/Documents/n1kl3r_TB2_WiSe_2223/app/__init__.py:77]
+2023-02-21 13:08:25,871 INFO: Microblog startup [in /Users/niklas/Documents/n1kl3r_TB2_WiSe_2223/app/__init__.py:77]
+2023-02-21 13:10:05,540 INFO: Microblog startup [in /Users/niklas/Documents/n1kl3r_TB2_WiSe_2223/app/__init__.py:77]
+2023-02-21 13:10:26,882 INFO: Microblog startup [in /Users/niklas/Documents/n1kl3r_TB2_WiSe_2223/app/__init__.py:77]
+2023-02-21 13:15:33,835 INFO: Microblog startup [in /Users/niklas/Documents/n1kl3r_TB2_WiSe_2223/app/__init__.py:77]
+2023-02-21 13:17:45,343 INFO: Microblog startup [in /Users/niklas/Documents/n1kl3r_TB2_WiSe_2223/app/__init__.py:77]
+2023-02-21 13:20:00,410 INFO: Microblog startup [in /Users/niklas/Documents/n1kl3r_TB2_WiSe_2223/app/__init__.py:77]
+2023-02-21 13:22:13,333 INFO: Microblog startup [in /Users/niklas/Documents/n1kl3r_TB2_WiSe_2223/app/__init__.py:77]
+2023-02-21 13:25:04,792 INFO: Microblog startup [in /Users/niklas/Documents/n1kl3r_TB2_WiSe_2223/app/__init__.py:77]
+2023-02-21 13:27:35,391 INFO: Microblog startup [in /Users/niklas/Documents/n1kl3r_TB2_WiSe_2223/app/__init__.py:77]
+2023-02-21 13:28:19,764 INFO: Microblog startup [in /Users/niklas/Documents/n1kl3r_TB2_WiSe_2223/app/__init__.py:77]
+2023-02-21 13:29:56,510 INFO: Microblog startup [in /Users/niklas/Documents/n1kl3r_TB2_WiSe_2223/app/__init__.py:77]
+2023-02-21 13:30:24,354 INFO: Microblog startup [in /Users/niklas/Documents/n1kl3r_TB2_WiSe_2223/app/__init__.py:77]
+2023-02-21 14:40:24,091 INFO: Microblog startup [in /Users/niklas/Documents/n1kl3r_TB2_WiSe_2223/app/__init__.py:77]
