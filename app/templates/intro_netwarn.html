@@ -1,1 +1,32 @@
-<p>Dear user, thank you for visiting NETWARN, a service for those in need of help.</p>
+<p>
+    Dear user, thank you for visiting NETWARN, a service for those in need of help. <br>
+    It is our goal to provide the world with valuable information in order to avoid or at least minimize the effects of a natural catastrophy.<br>
+    This service is structured into different aspects, so that information, communication and education can be combined and provide a united frontier of strength and trust. <br>
+</p>
+
+<h2 style="color:orange">
+    NETMAP
+</h2>
+
+<p>
+    NETMAP is the core of NETWARN. Here you can activate a natural events tracker with near real time data from NASA.<br>
+    Possible natural events provided by NASA are: <br>
+
+    - wildfires <br>
+    - volcano erruptions <br>
+    - landslides <br>
+    - severe Storms <br>
+</p>
+
+<p>
+    The map will show you the location of the natural event along with title and the day the event was discovered. br
+    Should an natural event turn into a catastrophy, communication is key. <br>
+    This is what NETFORUM is for. Posts can be published and read by yourself and other members of NETWARN. <br>
+    Every registered member has a personal profile describing the intention of the user. <br>
+    Those in need of help can describe their situation in their profile description or post about in the forum. <br>
+    Those wanting to help can declare their status in their profile or also post continuous updates in the forum. <br>
+    Members can follow each other and send private messages. <br>
+</p>
+
+<p>{{ _('New User?') }} <a href="{{ url_for('auth.register') }}">{{ _('Click to Register!') }}</a></p>
+<p>{{ _('Interested in NETMAP?') }} <a href="{{ url_for('main.geo_map') }}">{{ _('Click to Switch') }}</a></p>
