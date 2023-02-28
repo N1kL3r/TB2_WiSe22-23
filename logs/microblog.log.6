@@ -1,4 +1,4 @@
-2023-02-25 16:28:55,392 ERROR: Exception on /notifications [GET] [in /Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/flask/app.py:1741]
+2023-02-25 16:38:27,513 ERROR: Exception on /notifications [GET] [in /Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/flask/app.py:1741]
 Traceback (most recent call last):
   File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 1964, in _exec_single_context
     self.dialect.do_execute(
@@ -79,5 +79,6 @@ Traceback (most recent call last):
     cursor.execute(statement, parameters)
 sqlalchemy.exc.OperationalError: (sqlite3.OperationalError) database is locked
 [SQL: UPDATE user SET last_seen=? WHERE user.id = ?]
-[parameters: ('2023-02-25 15:28:49.953841', 2)]
+[parameters: ('2023-02-25 15:38:22.277949', 2)]
 (Background on this error at: https://sqlalche.me/e/20/e3q8)
+2023-02-25 16:43:58,412 INFO: Microblog startup [in /Users/niklas/Documents/n1kl3r_TB2_WiSe_2223/app/__init__.py:77]

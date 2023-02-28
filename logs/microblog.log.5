@@ -1,4 +1,4 @@
-2023-02-25 16:37:28,449 ERROR: Exception on /notifications [GET] [in /Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/flask/app.py:1741]
+2023-02-25 16:44:06,834 ERROR: Exception on /notifications [GET] [in /Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/flask/app.py:1741]
 Traceback (most recent call last):
   File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 1964, in _exec_single_context
     self.dialect.do_execute(
@@ -79,5 +79,5 @@ Traceback (most recent call last):
     cursor.execute(statement, parameters)
 sqlalchemy.exc.OperationalError: (sqlite3.OperationalError) database is locked
 [SQL: UPDATE user SET last_seen=? WHERE user.id = ?]
-[parameters: ('2023-02-25 15:37:23.014582', 2)]
+[parameters: ('2023-02-25 15:44:01.613608', 2)]
 (Background on this error at: https://sqlalche.me/e/20/e3q8)
